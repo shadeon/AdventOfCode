@@ -3,6 +3,10 @@ public class Day1
     private readonly IEnumerable<string> _input = File.ReadLines(@".\data\input.txt");
     private readonly IEnumerable<string> _sample = File.ReadLines(@".\data\sample.txt");
 
+    public IEnumerable<string> InputData => _input;
+
+    public IEnumerable<string> SampleData => _sample;
+
     public int GetPart1Answer() => part1(_input);
 
     public int GetPart1Sample() => part1(_sample);
@@ -21,7 +25,7 @@ public class Day1
         .Take(3)
         .Sum();
 
-    private IEnumerable<int> getElves(IEnumerable<string> input) => input
+    public IEnumerable<int> getElves(IEnumerable<string> input) => input
         .Aggregate(newStack<List<int>>(), (acc, line) => {
             if (int.TryParse(line, out var foodItem)) {
                 acc.Peek().Add(foodItem);

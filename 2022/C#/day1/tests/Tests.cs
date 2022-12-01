@@ -6,6 +6,22 @@ public class Day1Test
     private Day1 _sut = new Day1();
 
     [Fact]
+    public void Part1_Sample_ElfCountShouldBeCorrect()
+    {
+        var count = _sut.getElves(_sut.SampleData);
+
+        count.Should().HaveCount(5);
+    }
+
+    [Fact]
+    public void Part1_Input_ElfCountShouldBeCorrect()
+    {
+        var count = _sut.getElves(_sut.InputData);
+
+        count.Should().HaveCount(254);
+    }
+
+    [Fact]
     public void Part1_Sample_ShouldBeCorrect()
     {
         var answer = _sut.GetPart1Sample();
