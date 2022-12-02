@@ -1,4 +1,4 @@
-public class Day1
+public class Day1 : IDay, IDayPart1<int>, IDayPart2<int>
 {
     private readonly IEnumerable<string> _input = File.ReadLines(@".\data\input.txt");
     private readonly IEnumerable<string> _sample = File.ReadLines(@".\data\sample.txt");
