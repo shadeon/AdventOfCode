@@ -12,3 +12,4 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 
 - Day 1 - Calorie Counting: https://github.com/shadeon/AdventOfCode/pull/1
 - Day 2 - Rock, Paper, Scissors: https://github.com/shadeon/AdventOfCode/pull/2
+- Day 3 - Rucksack Reorganization: https://github.com/shadeon/AdventOfCode/pull/3
