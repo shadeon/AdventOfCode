@@ -14,3 +14,4 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 - Day 2 - Rock, Paper, Scissors: https://github.com/shadeon/AdventOfCode/pull/2
 - Day 3 - Rucksack Reorganization: https://github.com/shadeon/AdventOfCode/pull/3
 - Day 4 - Camp Cleanup: https://github.com/shadeon/AdventOfCode/pull/4
+- Day 5 - Supply Stacks: https://github.com/shadeon/AdventOfCode/pull/5
