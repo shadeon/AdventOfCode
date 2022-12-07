@@ -16,3 +16,4 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 - Day 4 - Camp Cleanup: https://github.com/shadeon/AdventOfCode/pull/4
 - Day 5 - Supply Stacks: https://github.com/shadeon/AdventOfCode/pull/5
 - Day 6 - Tuning Trouble: https://github.com/shadeon/AdventOfCode/pull/6
+- Day 7 - No Space Left On Device: https://github.com/shadeon/AdventOfCode/pull/7
