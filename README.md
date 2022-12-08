@@ -17,3 +17,4 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 - Day 5 - Supply Stacks: https://github.com/shadeon/AdventOfCode/pull/5
 - Day 6 - Tuning Trouble: https://github.com/shadeon/AdventOfCode/pull/6
 - Day 7 - No Space Left On Device: https://github.com/shadeon/AdventOfCode/pull/7
+- Day 8 - Treetop Tree House: https://github.com/shadeon/AdventOfCode/pull/8
