@@ -19,3 +19,4 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 - Day 7 - No Space Left On Device: https://github.com/shadeon/AdventOfCode/pull/7
 - Day 8 - Treetop Tree House: https://github.com/shadeon/AdventOfCode/pull/8
 - Day 9 - Rope Bridge: https://github.com/shadeon/AdventOfCode/pull/9
+- Day 10 - Cathode-Ray Tube: https://github.com/shadeon/AdventOfCode/pull/10
