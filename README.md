@@ -22,3 +22,4 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 - Day 10 - Cathode-Ray Tube: https://github.com/shadeon/AdventOfCode/pull/10
 - Day 11 - Monkey in the Middle: https://github.com/shadeon/AdventOfCode/pull/11
 - Day 12 - Hill Climbing Algorithm: https://github.com/shadeon/AdventOfCode/pull/12
+- Day 13 - Distress Signal: https://github.com/shadeon/AdventOfCode/pull/13
