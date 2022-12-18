@@ -24,3 +24,4 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 - Day 12 - Hill Climbing Algorithm: https://github.com/shadeon/AdventOfCode/pull/12
 - Day 13 - Distress Signal: https://github.com/shadeon/AdventOfCode/pull/13
 - Day 14 - Regolith Reservoir: https://github.com/shadeon/AdventOfCode/pull/14
+- Day 15 - Beacon Exclusion Zone: https://github.com/shadeon/AdventOfCode/pull/15
