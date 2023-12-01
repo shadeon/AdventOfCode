@@ -12,7 +12,7 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 
 ### 2023
 
-- Day 1 - Trebuchet?!:
+- Day 1 - Trebuchet?!: https://github.com/shadeon/AdventOfCode/pull/17
 
 ### 2022
 
