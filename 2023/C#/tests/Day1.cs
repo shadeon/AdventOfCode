@@ -1,7 +1,7 @@
 using Xunit;
 using FluentAssertions;
 
-public class DayXTests
+public class Day1Tests
 {
     Day1 _sut = new Day1();
 

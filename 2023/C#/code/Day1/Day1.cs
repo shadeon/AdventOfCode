@@ -2,11 +2,11 @@ using System.Text.RegularExpressions;
 
 public class Day1 : IDay, IDayPart1<int>, IDayPart2<int>
 {
-    public IEnumerable<string> InputData { get; } = File.ReadLines(@".\data\input.txt");
+    public IEnumerable<string> InputData { get; } = File.ReadLines(@".\data\day1\input.txt");
 
-    public IEnumerable<string> SampleData { get; } = File.ReadLines(@".\data\sample.txt");
+    public IEnumerable<string> SampleData { get; } = File.ReadLines(@".\data\day1\sample.txt");
 
-    public IEnumerable<string> SamplePart2Data { get; } = File.ReadLines(@".\data\samplePt2.txt");
+    public IEnumerable<string> SamplePart2Data { get; } = File.ReadLines(@".\data\day1\samplePt2.txt");
 
     public int GetPart1Answer(IEnumerable<string> input) =>
         getPart1Adjustments(input).Sum(s => int.Parse(s));
