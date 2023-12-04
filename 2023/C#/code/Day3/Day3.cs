@@ -1,4 +1,5 @@
 
+using System.Data;
 using System.Text.RegularExpressions;
 
 public class Day3 : IDay, IDayPart1<int>, IDayPart2<int?>
@@ -11,33 +12,28 @@ public class Day3 : IDay, IDayPart1<int>, IDayPart2<int?>
 
     private Regex _symbols = new Regex(@"[^\d.]");
 
-    private readonly record struct PartNumber(int Row, int Index, int Length, string Value);
-
     public int GetPart1Answer(IEnumerable<string> input)
     {
         var schematic = input.ToArray();
-        return getPartNumbers(schematic).Sum(p => int.Parse(p.Value));
+        return getPartNumbers(schematic).Sum();
     }
 
-    private IEnumerable<PartNumber> getPartNumbers(string[] schematic) =>
+    private IEnumerable<int> getPartNumbers(string[] schematic) =>
         schematic
-            .SelectMany((line, row) => _numbers.Matches(line).Select(match => new PartNumber(row, match.Index, match.Length, match.Value)))
-            .Where(candidate =>
-                // either side first
-                containsSymbol(schematic[candidate.Row], candidate) ||
-                // above, if possible
-                (candidate.Row > 0 && containsSymbol(schematic[candidate.Row - 1], candidate)) ||
-                // below, if possible
-                (candidate.Row < schematic.Length - 1 && containsSymbol(schematic[candidate.Row + 1], candidate))
-            );
+            .SelectMany((line, row) => {
+                var adjacentSymbols = 
+                    _symbols.Matches(schematic[row])
+                    // process above if not first row
+                    .Concat(row > 0 ? _symbols.Matches(schematic[row - 1]) : Enumerable.Empty<Match>())
+                    // process below if not final row
+                    .Concat(row < schematic.Length - 1 ? _symbols.Matches(schematic[row + 1]) : Enumerable.Empty<Match>())
+                    .Select(m => m.Index)
+                    .ToArray();
 
-    private bool containsSymbol(string line, PartNumber partNumber) =>
-        _symbols.IsMatch(
-            line.Substring(
-                Math.Max(partNumber.Index - 1, 0),
-                partNumber.Length + Math.Min(1, partNumber.Index) + Math.Min(1, line.Length - partNumber.Length - partNumber.Index)
-            )
-        );
+                return _numbers.Matches(line)
+                    .Where(match => adjacentSymbols.Any(index => index >= match.Index - 1 && index <= match.Index + match.Length ))
+                    .Select(match => int.Parse(match.Value));
+            });
         
     public int? GetPart2Answer(IEnumerable<string> input)
     {
