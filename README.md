@@ -13,6 +13,8 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 ### 2023
 
 - Day 1 - Trebuchet?!: https://github.com/shadeon/AdventOfCode/pull/17
+- Day 2 - Cube Conundrum: https://github.com/shadeon/AdventOfCode/pull/18
+- Day 3 - Gear Ratios: https://github.com/shadeon/AdventOfCode/pull/19
 
 ### 2022
 
