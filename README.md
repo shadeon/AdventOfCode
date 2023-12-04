@@ -15,6 +15,7 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 - Day 1 - Trebuchet?!: https://github.com/shadeon/AdventOfCode/pull/17
 - Day 2 - Cube Conundrum: https://github.com/shadeon/AdventOfCode/pull/18
 - Day 3 - Gear Ratios: https://github.com/shadeon/AdventOfCode/pull/19
+- Day 4 - Scratchcards: https://github.com/shadeon/AdventOfCode/pull/20
 
 ### 2022
 
