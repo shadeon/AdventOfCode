@@ -18,6 +18,7 @@ To get the answers for each day run `dotnet run --project .\code` from any given
 - Day 4 - Scratchcards: https://github.com/shadeon/AdventOfCode/pull/20
 - Day 5 - If You Give A Seed A Fertilizer: https://github.com/shadeon/AdventOfCode/pull/21
 - Day 6 - Wait For It: https://github.com/shadeon/AdventOfCode/pull/22
+- Day 7 - Camel Cards: https://github.com/shadeon/AdventOfCode/pull/23
 
 ### 2022
 
