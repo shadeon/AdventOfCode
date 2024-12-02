@@ -1,4 +1,4 @@
-﻿var dayX = new Day1();
+﻿var dayX = new Day2();
 
 // Part 1
 Console.WriteLine($"Part 1 Answer: {dayX.GetPart1Answer(dayX.InputData)}");
