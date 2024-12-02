@@ -8,7 +8,7 @@ This year due to a few things going on in my personal life I've decided not to l
 
 ### 2024
 
-- Day 1 - Historian Hysteria:
+- Day 1 - Historian Hysteria: https://github.com/shadeon/AdventOfCode/pull/24
 
 ### 2023
 
